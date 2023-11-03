@@ -6,7 +6,7 @@ app.use(cors());
 const PORT = process.env.PORT || 8080;
 const axios = require("axios");
 
-app.get("/", (request, response) => {
+app.get("/", (_, response) => {
   response.json("You are looking at root route");
 
   app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
